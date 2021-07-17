@@ -3,9 +3,12 @@ extends layout
 block content
     h1= title
     br
-    form(method='POST' action='new')
-    p Name:
-        input(type='text' name='name' placeholder='')
-    p Message:
-        input(type='text' name='message' placeholder='')
-    input(type='submit')
+    form(name='add-message', action='/new', method='post')
+        div.input
+            span.label Name
+            input(type="text", name="name")
+        div.input
+            span.label Message
+            input(type='text', name='message')
+        div.actions
+            input(type="submit", value="add")
