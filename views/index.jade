@@ -3,6 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to my #{title}
+  a(href='/new') Add a message
   br
   div
     each message in messages

@@ -3,13 +3,9 @@ var router = express.Router();
 
 const messages = [
   {
-    text: "Hi there! Welcome to my message board.",
+    text:
+      "Hi there! Welcome to my message board. This is a safe space to talk about poop.",
     user: "Pedro",
-    added: new Date(),
-  },
-  {
-    text: "Hello World!",
-    user: "Random User",
     added: new Date(),
   },
 ];
