@@ -2,4 +2,10 @@ extends layout
 
 block content
     h1= title
-    
+    br
+    form(method='POST' action='new')
+    p Name:
+        input(type='text' name='name' placeholder='')
+    p Message:
+        input(type='text' name='message' placeholder='')
+    input(type='submit')
